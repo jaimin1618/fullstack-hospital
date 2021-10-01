@@ -1,12 +1,5 @@
 <?php
-
-define('WEB_ROOT', basename(__DIR__));
-// echo WEB_ROOT . "<br>";
-
-define('DB_SERVER', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'hospital');
+require_once('config.php');
 require_once('functions.php');
 
 $conn = new mysqli(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
